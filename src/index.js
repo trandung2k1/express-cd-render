@@ -18,5 +18,8 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     return res.send('About route!');
 });
+app.get('/contact', (req, res) => {
+    return res.send('Contact route!');
+});
 app.listen(port, () => console.log(colors.green(`Server listening on http://localhost:${port}`)));
 module.exports = app;
