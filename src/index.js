@@ -15,5 +15,8 @@ const port = process.env.PORT || 3000;
 app.get('/', (req, res) => {
     return res.send('Hello World!');
 });
+app.get('/about', (req, res) => {
+    return res.send('About route!');
+});
 app.listen(port, () => console.log(colors.green(`Server listening on http://localhost:${port}`)));
 module.exports = app;
