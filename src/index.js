@@ -15,7 +15,7 @@ app.use(cors());
 app.use(helmet());
 app.disable('x-powered-by');
 const port = process.env.PORT || 3000;
-app.get('/api/welcome', (req, res) => {
+app.get('/', (req, res) => {
     return res.send('Welcome to the server!');
 });
 routes(app);
