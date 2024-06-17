@@ -11,7 +11,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
-app.use(morgan('combined'));
+// app.use(morgan('combined'));
 app.use(helmet());
 app.disable('x-powered-by');
 const port = process.env.PORT || 3000;
