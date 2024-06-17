@@ -15,7 +15,7 @@ app.use(morgan('combined'));
 app.use(helmet());
 app.disable('x-powered-by');
 const port = process.env.PORT || 3000;
-app.get('/welcome', (req, res) => {
+app.get('/api/welcome', (req, res) => {
     return res.send('Welcome to the server!');
 });
 routes(app);
